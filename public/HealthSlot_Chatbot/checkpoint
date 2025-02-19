@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\Web Development\\HealthSlot\\public\\HealthSlot_Chatbot\\model.tflearn"
+all_model_checkpoint_paths: "D:\\Web Development\\HealthSlot\\public\\HealthSlot_Chatbot\\model.tflearn"

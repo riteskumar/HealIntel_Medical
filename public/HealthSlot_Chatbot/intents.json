@@ -1,0 +1,1737 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+     "responses": ["Hello! What problems are you facing?", "Good to see you again! What problems are you facing?", "Hi there, What problems are you facing"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+     "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+     "context_set": ""
+    },
+    {"tag": "name",
+     "patterns": ["what is your name", "what should I call you", "who are you"],
+     "responses": ["You can call me HealIntel.", "I'm HealIntel!", "I'm HealIntel."],
+     "context_set": ""
+    },
+    {"tag": "hours",
+     "patterns": ["when are you available", "what are your hours", "hours of operation"],
+     "responses": ["We are open 24/7"],
+     "context_set": ""
+    },
+    {"tag": "application",
+    "patterns": ["what can you do", "what are your capabilities", "what is your application"],
+    "responses": ["I can answer simple medical related queries."],
+    "context_set": ""
+   },
+   {"tag": "appointment",
+   "patterns": ["how to book an appointment", "how to get an appointment", "how to consult a doctor"],
+   "responses": ["Steps: 1)Register yourself, 2) Choose Doctor and date and time of appointment, 3) Schedule appointment"],
+   "context_set": ""
+  },
+    {"tag": "Cuts",
+     "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
+     "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
+     "context_set": ""
+    },
+
+    {"tag": "Abrasions",
+     "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
+     "responses": ["Begin with washed hands. Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that's not bleeding, leave the wound uncovered.If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
+     "context_set": ""
+    },
+
+    {"tag": "stings",
+     "patterns": ["How do you treat Sting?", "Stings", "What to do if you get a sting?", "Which medicine to apply if sting?"],
+     "responses": ["Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."],
+     "context_set": ""
+    },
+
+    {"tag": "Splinter",
+     "patterns": ["How to remove Splinters", "How to cure Splinters?", "What to do if I have splinters?", "How do you bring a splinter to the surface?"],
+     "responses": ["1. SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface. 2. VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes,"],
+     "context_set": ""
+    },
+
+    {"tag": "Sprains",
+     "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?"],
+     "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers - such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."],
+     "context_set": ""
+    },
+
+    {"tag": "Strains",
+     "patterns": ["How do you treat a strain?", "what to do if i get a strain?", "Which cream to apply if i get a strain?", "Which medicine to apply if I get a strain?", "How do you diagnose a strain?", "Is heat or ice better for a pulled muscle?"],
+     "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Don't put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."],
+     "context_set": ""
+    },
+
+    {"tag": "Fever",
+     "patterns": ["How do you treat a mild Fever?", "what to do if i get a mild fever?", "Which medicine to take if I get a mild fever?", "fever"],
+     "responses": ["To treat a fever at home: 1)Drink plenty of fluids to stay hydrated. 2)Dress in lightweight clothing. 3)Use a light blanket if you feel chilled, until the chills end. 4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). 5) Get medical help if the fever lasts more than five days in a row."],
+     "context_set": ""
+    },
+
+    {"tag": "Nasal Congestion",
+     "patterns": ["How do you treat nasal Congestion?", "what to do if i get a nasal congestion?", "Which medicine to take if I have a nasal congestion?", "what to do if i have a blocked nose?", "How do you treat a blocked nose?", "How long does nasal congestion last?"],
+     "responses": ["When you're stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."],
+     "context_set": ""
+    },
+
+    {"tag": "Cough",
+     "patterns": ["How to cure cough?","How do you treat cough?", "what to do if i get a cough?", "Which medicine to take if I get cough?", "How do you get rid of cough?"],
+     "responses": ["1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day. Do not give honey to children under 1 year of age. 2) Ginger:- Brew up a soothing ginger tea by adding 20-40 grams (g) of fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking. Add honey or lemon juice to improve the taste and further soothe a cough. 3) Fluids:- Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."],
+     "context_set": ""
+    },
+
+    {"tag": "Sore Throat",
+     "patterns": ["How do you treat sore throat?", "what to do if i get a sore throat?", "Which medicine to take if I get a sore throat?", "How to cure sore throat?"],
+     "responses": ["1) Make sure you get plenty of rest and drink a lot of fluids. 2)Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, and have the person lean over the sink with the water running. Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day. 3)Have him sip chicken broth or warm tea with honey. Don't give honey to a child under 12 months of age."],
+     "context_set": ""
+    },
+
+    {"tag": "Gastrointestinal problems",
+     "patterns": ["How do you treat gas problems?", "what to do if i have Gastrointestinal problems?", "Which medicine to take if I get gas problem?", "How to cure Gas problems?"],
+     "responses": ["1) Replenish body fluids 2)Do not take antidiarrheal drugs or laxatives or pain medication, unless specified by a medical professional.3)Taking antacids may help, per recommendation of a healthcare professional. 4)If prone to frequent heartburns, seek medical help. 5)Taking meals that are not spicy regularly, can relieve ulcer pains. 6)Seek medical help, if conditions persist or continue to worsen"],
+     "context_set": ""
+    },
+
+    {"tag": "Skin problems",
+     "patterns": ["How do you treat Skin problems?", "what to do if i get a skin allergy?", "Which medicine to take if I get a skin allergy?", "How to cure skin allergy?"],
+     "responses": ["1)Hydrocortisone cream. 2)Ointments like calamine lotion. 3)Antihistamines. 4)Cold compresses. 5)Oatmeal baths. 6)Talk to your doctor about what's best for your specific rash."],
+     "context_set": ""
+    },
+
+    {"tag": "Abdonominal Pain",
+     "patterns": ["How do you treat Abdonominal Pain?", "what to do if i get a Abdonominal Pain?", "Which medicine to take if I get a Abdonominal Pain?", "How to cure Abdonominal Pain?"],
+     "responses": ["1)Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. 2)Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. 3)Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "],
+     "context_set": ""
+    },
+
+    {"tag": "Bruises",
+     "patterns": ["How do you treat Bruises?", "what to do if i get a Bruise?", "Which medicine to take if I get a Bruise?", "How to cure Bruises?"],
+     "responses": ["1)Ice the bruise with an ice pack wrapped in a towel. 2)Leave it in place for 10 to 20 minutes. 3)Repeat several times a day for a day or two as needed. 4)Compress the bruised area if it is swelling, using an elastic bandage. "],
+     "context_set": ""
+    },
+
+    {"tag": "Broken Toe",
+     "patterns": ["How do you treat a Broken Toe?", "what to do if i get a Broken Toe?", "Which medicine to take if I get a Broken Toe?", "How to cure Broken Toe?"],
+     "responses": ["1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. 2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.3) Most broken toes heal without complications in six weeks."],
+     "context_set": ""
+    },
+
+    {"tag": "Choking",
+     "patterns": ["How do you treat Choking?", "what to do if i get a Choke?", "Which medicine to take if I get Choked?", "How to cure Choking?"],
+     "responses": ["1)Encourage them to keep coughing to try to clear the blockage. 2)Ask them to try to spit out the object if it's in their mouth. 3)If coughing doesn't work, start back blows and Abdonominal thrusts"],
+     "context_set": ""
+    },
+
+    {"tag": "Wound",
+     "patterns": ["How do you treat a wound?", "what to do if i get a Wound?", "Which medicine to take if I get wounded?", "How to cure a wound?"],
+     "responses": ["1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. 2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. 3)Raise the injured body part to slow bleeding. 4)When bleeding stops, cover the wound with a new, clean bandage."],
+     "context_set": ""
+    },
+
+    {"tag": "Diarrhea",
+     "patterns": ["How do you treat Diarrhea?", "what to do if i get Diarrhea?", "Which medicine to take if I get Diarrhea?", "How to cure Diarrhea?"],
+     "responses": ["1)Hydrating the body is essential for recovering from diarrhea.This causes the body to lose electrolytes such as sodium and chloride. 2)It is highly recommended to avoid dairy products, as they may worsen diarrhea in some people. 3)However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications."],
+     "context_set": ""
+    },
+
+    {"tag": "Frost bite",
+     "patterns": ["How do you treat a Frost bite?", "what to do if i get a Frost bite?", "Which medicine to take if I get a Frost bite?", "How to cure Frost bite?"],
+     "responses": ["1)Get out of the cold. Once you're in a warm space, remove wet clothes and wrap up in a warm blanket. 2) Gently rewarm frostbitten areas. Soak frostbitten fingers, toes or other extremities in warm water - 105 to 110 F (about 40 to 43 C). If a thermometer isn't available, test the water by placing an uninjured hand or elbow in it - it should feel very warm, not hot. Soak for 20 to 30 minutes or until the skin becomes its normal color or loses its numbness. For the face or ears, apply a warm, wet washcloth. "],
+     "context_set": ""
+    },
+
+    {"tag": "Heat Exhaustion",
+     "patterns": ["How do you treat Heat Exhaustion?", "what to do if i feel Exhausted due to heat?", "Which medicine to take if I get Exhausted?", "How to cure Heat Exhaustion?"],
+     "responses": ["1)Move the person out of the heat and into a shady or air-conditioned place. Lay the person down and elevate the legs and feet slightly. Remove tight or heavy clothing. Have the person drink cool water or other nonalcoholic beverage without caffeine "],
+     "context_set": ""
+    },
+
+    {"tag": "Heat Stroke",
+     "patterns": ["How do you treat Heat Stroke?", "what to do if i get a Heat Stroke?", "Which medicine to take if I get Stroke?", "How to cure a Heat Stroke?"],
+     "responses": ["1)Cool the person's entire body by sponging or spraying cold water, and fan the person to help lower the person's body temperature. Watch for signs of rapidly progressing heatstroke, such as seizure, unconsciousness for longer than a few seconds, and moderate to severe difficulty breathing. "],
+     "context_set": ""
+    },
+
+    {"tag": "Insect Bites",
+     "patterns": ["How do you treat a Insect Bite?", "what to do if a insect bites me?", "Which medicine to take if I get bitten by a insect?", "How to cure insect bite?"],
+     "responses": ["1) Wash the affected area with soap and water. Apply a cold compress (such as a flannel or cloth cooled with cold water) or an ice pack to any swelling for at least 10 minutes. Raise or elevate the affected area if possible, as this can help reduce swelling. "],
+     "context_set": ""
+    },
+
+    {"tag": "nose bleed",
+     "patterns": ["How do you treat a bleeding nose?", "what to do if i my nose is bleeding?", "Which medicine to take if I get nose bleed?", "How to cure nose bleeding?"],
+     "responses": ["1) Wash the affected area with soap and water. Apply a cold compress (such as a flannel or cloth cooled with cold water) or an ice pack to any swelling for at least 10 minutes. Raise or elevate the affected area if possible, as this can help reduce swelling "],
+     "context_set": ""
+    },
+
+    {"tag": "Pulled Muscle",
+     "patterns": ["How do you treat a Pulled Muscle?", "what to do if my muscle is pulled?", "Which medicine to take if I got pulled muscle?", "How to cure a pulled muscle?"],
+     "responses": ["1) Apply ice for 10 to 15 minutes every 1 hour for the first day and every 3 to 4 hours after that. Use ice for the first 3 days. After 3 days, either heat or ice may be helpful if you still have pain. Rest the pulled muscle for at least a day. "],
+     "context_set": ""
+    },
+
+    {"tag": "Rectal bleeding",
+     "patterns": ["How do you treat Rectal Bleeding?", "what to do if i get a Rectal Bleeding?", "Which medicine to take if I get Rectal Bleeding?", "How to cure Rectal Bleeding?"],
+     "responses": ["1) For minimal bleeding due to hemorrhoids or rectal fissures, physicians will usually direct home treatment with lots of water, ice packs and possibly over the counter ointments or suppositories to create movement in the bowels or to soften the stool. Emergency treatment might include an IV in the case of dehydration. "],
+     "context_set": ""
+    },
+
+    {"tag": "Sun Burn",
+     "patterns": ["How do you treat Sun Burn?", "what to do if i get a Sun Burn?", "Which medicine to take if I get Sun Burn?", "How to cure a Sun Burn?"],
+     "responses": ["1) Cool the skin, 2) Drink water to prevent dehydration., 3) Take a pain reliever such as ibuprofen (Advil, Motrin IB, others) to help with the discomfort and swelling of sunburn. "],
+     "context_set": ""
+    },
+
+    {"tag": "Testicle Pain",
+     "patterns": ["How do you treat Testicle Pain?", "what to do if i get a Testicle Pain?", "Which medicine to take if I get a Testicle Pain?", "How to cure Testicle Pain?"],
+     "responses": ["1) For pain, take over-the-counter medication such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin). For swelling, apply an ice pack to the scrotum. "],
+     "context_set": ""
+    },
+
+    {"tag": "Vertigo",
+     "patterns": ["How do you treat a Vertigo?", "what to do if i get a Vertigo?", "Which medicine to take if I get Vertigo?", "How to cure a Vertigo?"],
+     "responses": ["1) Relieve or Prevent Dizziness. Have the person lie down and rest, 2) Keep the Person Safe. Help the person avoid falls, 3) Call a Health Care Provider. Any new signs and symptoms of vertigo should be checked by a health care provider."],
+     "context_set": ""
+    },
+
+    {"tag": "Normal Bleeding",
+     "patterns": ["How do you treat bleeding?", "what to do if i get a Bleeding?", "Which medicine to take if I get bleeding?", "How to cure Bleeding?"],
+     "responses": ["1) First aid actions to manage external bleeding include applying direct pressure to the wound, maintaining the pressure using pads and bandages, and, raising the injured limb above the level of the heart if possible. "],
+     "context_set": ""
+    },
+
+    {"tag": "Eye Injury",
+     "patterns": ["How do you treat an eye Injury?", "what to do if i get a eye Injury?", "Which medicine to take if I injured my eye?", "How to cure injured eye?"],
+     "responses": ["1) DO NOT rub the eye, 2)Blink several times and allow tears to flush out the particle, 3) Lift the upper eyelid over the lashes of your lower lid to let the eyelashes try to brush the particle out., 4) Use eyewash, saline solution or running tap water to flush the eye out "],
+     "context_set": ""
+    },
+
+    {"tag": "Chemical Burn",
+     "patterns": ["How do you treat a chemical burn?", "what to do if i get a Chemical Burn?", "Which medicine to take if I get burn due to chemicals?", "How to cure Chemical Burn?"],
+     "responses": ["1) rinsed with water · Flush the area for at least 20 minutes. · As you flush the area, take off any clothing or jewellery that has the chemical on it ,2) Don't use a strong stream of water, if possible., 3)Don't try to neutralize the burn with acid or alkali. This could cause a chemical reaction that worsens the burn, 4) Don't put antibiotic ointment on the burn. "],
+     "context_set": ""
+    },
+
+    {"tag": "Poison",
+     "patterns": ["How do you treat a Poison?", "what to do if i get Poison?", "Which medicine to take if I am poisoned?", "How to cure Poisoning?"],
+     "responses": ["1) Get to fresh air right away. Call the toll-free Poison Help line (1-800-222-1222), which connects you to your local poison center, 2) Take off any clothing the poison touched. Rinse skin with running water for 15 to 20 minutes. Call the toll-free Poison Help line (1-800-222-1222), which connects you to your local poison center.,3) If the person swallowed the wrong medicine or too much medicine: Call Poison Help (1-800-222-1222), which connects you to your local poison center.,4) Every poisoning is different. "],
+     "context_set": ""
+    },
+
+    {"tag": "Teeth",
+     "patterns": ["How do you treat broken Teeth ?", "what to do if my Teeth got broken?", "Which medicine to take if I get broken teeth?", "cure broken teeth?"],
+     "responses": ["1) lick the tooth clean if it's dirty, or rinse it in water. put it back into position (adult teeth only); never try to re-insert a baby tooth (see below) bite on a handkerchief to hold the tooth in place. go to see a dentist as an emergency "],
+     "context_set": ""
+    },
+
+    {"tag": "seizure",
+     "patterns": ["How do you treat a seizure?", "what to do if i get a seizure?", "Which medicine to take if I get seizure?", "How to cure seizure?"],
+     "responses": ["1) Stay calm and remain with the person, 2) If they have food or fluid in their mouth, roll them onto their side immediately, 3) Place something soft under their head and loosen any tight clothing. "],
+     "context_set": ""
+    },
+
+    {"tag": "Head Injury",
+     "patterns": ["How do you treat a head Injury?", "what to do if i get a Head Injury?", "Which medicine to take if I get injured in the head?", "How to cure Head Injury?"],
+     "responses": ["1) Apply firm pressure to the wound with sterile gauze or a clean cloth. But don't apply direct pressure to the wound if you suspect a skull fracture. "],
+     "context_set": ""
+    },
+
+    {"tag": "Fainting",
+     "patterns": ["How do you treat Faint?", "what to do if i feel like Fainting?", "Which medicine to take if I get a Faint?", "How to cure Fainting?"],
+     "responses": ["1) Lie down or sit down. To reduce the chance of fainting again, don't get up too quickly, 2) Place your head between your knees if you sit down, 3)Position the person on his or her back. If there are no injuries and the person is breathing, raise the person's legs above heart level - about 12 inches (30 centimeters) - if possible. Loosen belts, collars or other constrictive clothing. "],
+     "context_set": ""
+    },
+
+    {"tag": "Headache",
+     "patterns": ["How do you treat a mild Headache?", "what to do if i get a mild Headache?", "Which medicine to take if I have a mild headache?", "How to cure a mild headache?"],
+     "responses": ["Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. Do not give aspirin to a child under age 18."],
+     "context_set": ""
+    },
+
+{"tag": "Cold",
+     "patterns": ["How do you treat a Cold?", "what to do if i get a mild Cold?", "Which medicine to take if I have a Cold?", "How to cure Cold?"],
+     "responses": ["1)Keeping hydrated is absolutely vital to help 'flush' out the cold, as well as to break down congestion and keep your throat lubricated. 2)Vitamin C is extremely helpful when fighting infection, so at the first sign of a cold be sure to increase your intake by eating plenty of berries, citrus fruits, papayas, broccoli and red peppers which will help keep you protected. 3)When it comes to combating a cold,Vitamin D is essential in helping to regulate immune response."],
+     "context_set": ""
+    },
+
+{"tag": "Rash",
+     "patterns": ["How do you treat Rashes?", "what to do if i get a Rash?", "Which medicine to take if I have a Rash?", "How to cure Rash?"],
+     "responses": ["1)Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. It also soothes the skin and reduces itching. 2)Baking soda is useful in drying skin rashes as also in relieving itching and inflammation. 3)Aloe Vera,Thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, aloe vera is excellent for treating a number of skin ailments including rashes as also soothing the skin."],
+     "context_set": ""
+    },
+
+{"tag": "snake bite",
+     "patterns": ["How do you treat a snake bite?", "what to do if i get a snake bite?", "Which medicine to take if I get a snake bite?", "How to cure snake bite?", "i got bit by a snake"],
+     "responses": ["While waiting for medical help: 1)Move the person beyond striking distance of the snake. 2)Have the person lie down with wound below the heart. 3)Keep the person calm and at rest, remaining as still as possible to keep venom from spreading. 4)Cover the wound with loose, sterile bandage. 5)Remove any jewelry from the area that was bitten. 6)Remove shoes if the leg or foot was bitten."],
+     "context_set": ""
+    },
+
+{"tag": "animal bite",
+     "patterns": ["How do you treat a animal bite?", "How do you treat a monkey bite?","How do you treat a dog bite?", "what to do if i get a animal bite?", "Which medicine to take if I get a monekey bite?", "How to cure dog bite?", "i got bit by a dog"],
+     "responses": ["1)Wash the wound with soap and warm water. 2)Gently press a clean cloth over the wound to stop the flow of blood. 3)Apply an antibacterial ointment to the wound. 4)Cover with a sterile bandage. 5)Watch for signs of infection. 6)Seek help if you suspect infection or possible exposure to rabies, or if the wound is severe."],
+     "context_set": ""
+    },
+
+{"tag": "Drowning",
+     "patterns": ["What to do if someone is Drowning?", "what to do if someone drowned?", "What steps to take if i see a drowning person?", "How to help a drowning person?"],
+     "responses": ["1)Place your ear next to the person's mouth and nose. Do you feel air on your cheek? 2)Look to see if the person's chest is moving.If the Person is Not Breathing, Check Pulse. 3)Check the person's pulse for 10 seconds.If There is No Pulse, Start CPR."],
+     "context_set": ""
+    },
+
+{"tag": "CPR",
+     "patterns": ["How to give CPR??", "what to do in a CPR?", "What steps to take in a CPR??", "How to help a drowning person in CPR?"],
+     "responses": ["1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line. You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone. 2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. 3)Do chest compressions only, at the rate of 100-120 per minute or more. Let the chest rise completely between pushes. 4)Check to see if the person has started breathing."],
+     "context_set": ""
+    },
+
+{"tag": "Fracture",
+     "patterns": ["How do you treat a Fracture?", "what to do if i get a Fracture?", "Which medicine to take if I have a Fracture?", "How to cure a Fracture?"],
+     "responses": ["1)Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. 2)Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. If you've been trained in how to splint and professional help isn't readily available, apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort. 3)Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin. Wrap the ice in a towel, piece of cloth or some other material. 4)Treat for shock. If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, if possible, elevate the legs."],
+     "context_set": ""
+    },
+    {
+            "tag": "tuberculosis_symptoms",
+            "patterns": [
+                "What are the symptoms of tuberculosis?",
+                "How do I know if I have TB?",
+                "Signs of tuberculosis"
+            ],
+            "responses": [
+                "Common symptoms of tuberculosis include a persistent cough, chest pain, coughing up blood, fatigue, fever, and weight loss."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "tuberculosis_treatment",
+            "patterns": [
+                "How is tuberculosis treated?",
+                "TB treatment options",
+                "What can cure tuberculosis?"
+            ],
+            "responses": [
+                "Tuberculosis is usually treated with antibiotics such as isoniazid, rifampin, ethambutol, and pyrazinamide for several months."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "tuberculosis_prevention",
+            "patterns": [
+                "How can I prevent tuberculosis?",
+                "Ways to avoid TB",
+                "Preventing tuberculosis"
+            ],
+            "responses": [
+                "Prevention methods for tuberculosis include BCG vaccination, wearing masks, and ensuring proper ventilation in crowded spaces."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "malaria_symptoms",
+            "patterns": [
+                "What are the symptoms of malaria?",
+                "Signs of malaria infection",
+                "How do I know if I have malaria?"
+            ],
+            "responses": [
+                "Malaria symptoms typically include fever, chills, headache, nausea, vomiting, and muscle pain."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "malaria_treatment",
+            "patterns": [
+                "How is malaria treated?",
+                "Malaria treatment options",
+                "What medicine is used for malaria?"
+            ],
+            "responses": [
+                "Malaria is treated with antimalarial drugs such as chloroquine, artemisinin-based combination therapies (ACTs), and mefloquine."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "malaria_prevention",
+            "patterns": [
+                "How can I prevent malaria?",
+                "Ways to avoid malaria",
+                "Preventing malaria"
+            ],
+            "responses": [
+                "Malaria prevention includes using mosquito nets, insect repellents, wearing protective clothing, and taking antimalarial prophylaxis when traveling to endemic areas."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "dengue_symptoms",
+            "patterns": [
+                "What are the symptoms of dengue?",
+                "Signs of dengue fever",
+                "How do I know if I have dengue?"
+            ],
+            "responses": [
+                "Dengue symptoms include high fever, severe headache, pain behind the eyes, joint and muscle pain, rash, and mild bleeding."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "dengue_treatment",
+            "patterns": [
+                "How is dengue treated?",
+                "Dengue treatment options",
+                "Can dengue be cured?"
+            ],
+            "responses": [
+                "There is no specific treatment for dengue; care includes managing symptoms, staying hydrated, and taking pain relievers such as acetaminophen."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "dengue_prevention",
+            "patterns": [
+                "How can I prevent dengue?",
+                "Ways to avoid dengue",
+                "Preventing dengue"
+            ],
+            "responses": [
+                "Dengue prevention involves avoiding mosquito bites by using repellents, wearing long-sleeved clothing, and eliminating standing water where mosquitoes breed."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "typhoid_symptoms",
+            "patterns": [
+                "What are the symptoms of typhoid?",
+                "How do I know if I have typhoid?",
+                "Signs of typhoid fever"
+            ],
+            "responses": [
+                "Typhoid symptoms include high fever, weakness, stomach pain, headache, and sometimes rash."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "typhoid_treatment",
+            "patterns": [
+                "How is typhoid treated?",
+                "Typhoid treatment options",
+                "What medicine is used for typhoid?"
+            ],
+            "responses": [
+                "Typhoid is usually treated with antibiotics such as ciprofloxacin or azithromycin."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "typhoid_prevention",
+            "patterns": [
+                "How can I prevent typhoid?",
+                "Ways to avoid typhoid",
+                "Preventing typhoid"
+            ],
+            "responses": [
+                "Typhoid prevention includes drinking safe water, avoiding raw foods, and getting vaccinated in high-risk areas."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "chikungunya_symptoms",
+            "patterns": ["What are the symptoms of chikungunya?", "Signs of chikungunya infection", "How do I know if I have chikungunya?"],
+            "responses": ["Chikungunya symptoms include high fever, joint pain, muscle pain, headache, fatigue, and rash."],
+            "context_set": ""
+        },
+        {
+            "tag": "chikungunya_treatment",
+            "patterns": ["How is chikungunya treated?", "Chikungunya treatment options", "What cures chikungunya?"],
+            "responses": ["There is no specific treatment for chikungunya; care involves managing symptoms, staying hydrated, and taking pain relievers like acetaminophen."],
+            "context_set": ""
+        },
+        {
+            "tag": "chikungunya_prevention",
+            "patterns": ["How can I prevent chikungunya?", "Ways to avoid chikungunya", "Preventing chikungunya"],
+            "responses": ["Prevent chikungunya by avoiding mosquito bites, using repellents, and eliminating standing water where mosquitoes breed."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_a_symptoms",
+            "patterns": ["What are the symptoms of Hepatitis A?", "Signs of Hepatitis A infection", "How do I know if I have Hepatitis A?"],
+            "responses": ["Hepatitis A symptoms include fatigue, nausea, abdominal pain, loss of appetite, and jaundice (yellowing of the skin and eyes)."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_a_treatment",
+            "patterns": ["How is Hepatitis A treated?", "Hepatitis A treatment options", "Cure for Hepatitis A"],
+            "responses": ["Hepatitis A usually resolves on its own over time; rest, hydration, and proper nutrition are recommended."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_a_prevention",
+            "patterns": ["How can I prevent Hepatitis A?", "Ways to avoid Hepatitis A", "Preventing Hepatitis A"],
+            "responses": ["Prevent Hepatitis A by getting vaccinated, practicing good hygiene, and avoiding contaminated food and water."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_b_symptoms",
+            "patterns": ["What are the symptoms of Hepatitis B?", "Signs of Hepatitis B infection", "How do I know if I have Hepatitis B?"],
+            "responses": ["Hepatitis B symptoms include abdominal pain, dark urine, fever, joint pain, nausea, vomiting, and jaundice."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_b_treatment",
+            "patterns": ["How is Hepatitis B treated?", "Hepatitis B treatment options", "Cure for Hepatitis B"],
+            "responses": ["Hepatitis B treatment may include antiviral medications and regular monitoring to manage liver health."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_b_prevention",
+            "patterns": ["How can I prevent Hepatitis B?", "Ways to avoid Hepatitis B", "Preventing Hepatitis B"],
+            "responses": ["Prevent Hepatitis B by getting vaccinated, using safe injection practices, and avoiding risky sexual behavior."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_c_symptoms",
+            "patterns": ["What are the symptoms of Hepatitis C?", "Signs of Hepatitis C infection", "How do I know if I have Hepatitis C?"],
+            "responses": ["Hepatitis C symptoms include fatigue, jaundice, dark urine, abdominal pain, and joint pain."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_c_treatment",
+            "patterns": ["How is Hepatitis C treated?", "Hepatitis C treatment options", "Cure for Hepatitis C"],
+            "responses": ["Hepatitis C is treated with antiviral medications, which can often lead to complete recovery."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_c_prevention",
+            "patterns": ["How can I prevent Hepatitis C?", "Ways to avoid Hepatitis C", "Preventing Hepatitis C"],
+            "responses": ["Prevent Hepatitis C by avoiding needle sharing, practicing safe sex, and getting screened if at risk."],
+            "context_set": ""
+        },
+        {
+            "tag": "cholera_symptoms",
+            "patterns": ["What are the symptoms of cholera?", "Signs of cholera infection", "How do I know if I have cholera?"],
+            "responses": ["Cholera symptoms include watery diarrhea, dehydration, vomiting, and leg cramps."],
+            "context_set": ""
+        },
+        {
+            "tag": "cholera_treatment",
+            "patterns": ["How is cholera treated?", "Cholera treatment options", "Cure for cholera"],
+            "responses": ["Cholera treatment includes oral rehydration, IV fluids, and antibiotics in severe cases."],
+            "context_set": ""
+        },
+        {
+            "tag": "cholera_prevention",
+            "patterns": ["How can I prevent cholera?", "Ways to avoid cholera", "Preventing cholera"],
+            "responses": ["Prevent cholera by drinking safe water, maintaining good hygiene, and getting vaccinated when in high-risk areas."],
+            "context_set": ""
+        },
+        {
+            "tag": "leptospirosis_symptoms",
+            "patterns": ["What are the symptoms of leptospirosis?", "Signs of leptospirosis infection", "How do I know if I have leptospirosis?"],
+            "responses": ["Leptospirosis symptoms include high fever, chills, headache, muscle aches, vomiting, jaundice, and red eyes."],
+            "context_set": ""
+        },
+        {
+            "tag": "leptospirosis_treatment",
+            "patterns": ["How is leptospirosis treated?", "Leptospirosis treatment options", "Cure for leptospirosis"],
+            "responses": ["Leptospirosis is treated with antibiotics such as doxycycline or penicillin."],
+            "context_set": ""
+        },
+        {
+            "tag": "leptospirosis_prevention",
+            "patterns": ["How can I prevent leptospirosis?", "Ways to avoid leptospirosis", "Preventing leptospirosis"],
+            "responses": ["Prevent leptospirosis by avoiding contact with contaminated water, wearing protective clothing, and vaccinating animals."],
+            "context_set": ""
+        },
+        {
+            "tag": "covid19_symptoms",
+            "patterns": ["What are the symptoms of COVID-19?", "Signs of COVID-19 infection", "How do I know if I have COVID-19?"],
+            "responses": ["COVID-19 symptoms include fever, cough, shortness of breath, loss of taste or smell, fatigue, and body aches."],
+            "context_set": ""
+        },
+        {
+            "tag": "covid19_treatment",
+            "patterns": ["How is COVID-19 treated?", "COVID-19 treatment options", "Cure for COVID-19"],
+            "responses": ["COVID-19 treatment includes supportive care, antiviral medications, and, in severe cases, hospitalization and oxygen therapy."],
+            "context_set": ""
+        },
+        {
+            "tag": "covid19_prevention",
+            "patterns": ["How can I prevent COVID-19?", "Ways to avoid COVID-19", "Preventing COVID-19"],
+            "responses": ["Prevent COVID-19 by getting vaccinated, wearing masks, practicing social distancing, and frequent hand washing."],
+            "context_set": ""
+        },
+        {
+            "tag": "chickenpox_symptoms",
+            "patterns": ["What are the symptoms of chickenpox?", "Signs of chickenpox infection", "How do I know if I have chickenpox?"],
+            "responses": ["Chickenpox symptoms include itchy red spots or blisters, fever, tiredness, and loss of appetite."],
+            "context_set": ""
+        },
+        {
+            "tag": "chickenpox_treatment",
+            "patterns": ["How is chickenpox treated?", "Chickenpox treatment options", "Cure for chickenpox"],
+            "responses": ["Chickenpox is managed by relieving symptoms with antihistamines, calamine lotion, and rest."],
+            "context_set": ""
+        },
+        {
+            "tag": "chickenpox_prevention",
+            "patterns": ["How can I prevent chickenpox?", "Ways to avoid chickenpox", "Preventing chickenpox"],
+            "responses": ["Prevent chickenpox by getting vaccinated and avoiding contact with infected individuals."],
+            "context_set": ""
+        },
+        {
+            "tag": "h1n1_symptoms",
+            "patterns": ["What are the symptoms of H1N1?", "Signs of Swine Flu", "How do I know if I have H1N1?"],
+            "responses": ["H1N1 symptoms include fever, cough, sore throat, body aches, fatigue, and chills."],
+            "context_set": ""
+        },
+        {
+            "tag": "h1n1_treatment",
+            "patterns": ["How is H1N1 treated?", "Swine flu treatment options", "Cure for H1N1"],
+            "responses": ["Treatment for H1N1 includes antiviral drugs like oseltamivir, and symptom management with rest and fluids."],
+            "context_set": ""
+        },
+        {
+            "tag": "h1n1_prevention",
+            "patterns": ["How can I prevent H1N1?", "Ways to avoid swine flu", "Preventing H1N1"],
+            "responses": ["Prevent H1N1 by getting vaccinated, washing hands regularly, and avoiding close contact with sick individuals."],
+            "context_set": ""
+        },
+        {
+            "tag": "measles_symptoms",
+            "patterns": ["What are the symptoms of measles?", "Signs of measles", "How do I know if I have measles?"],
+            "responses": ["Measles symptoms include high fever, cough, runny nose, inflamed eyes, and a red, spotty rash."],
+            "context_set": ""
+        },
+        {
+            "tag": "measles_treatment",
+            "patterns": ["How is measles treated?", "Measles treatment options", "Cure for measles"],
+            "responses": ["Measles treatment focuses on managing symptoms, with rest, hydration, and vitamin A supplements."],
+            "context_set": ""
+        },
+        {
+            "tag": "measles_prevention",
+            "patterns": ["How can I prevent measles?", "Ways to avoid measles", "Preventing measles"],
+            "responses": ["Prevent measles with the MMR vaccine, practicing good hygiene, and avoiding contact with infected individuals."],
+            "context_set": ""
+        },
+        {
+            "tag": "mumps_symptoms",
+            "patterns": ["What are the symptoms of mumps?", "Signs of mumps infection", "How do I know if I have mumps?"],
+            "responses": ["Mumps symptoms include swollen salivary glands, fever, headache, muscle aches, and fatigue."],
+            "context_set": ""
+        },
+        {
+            "tag": "mumps_treatment",
+            "patterns": ["How is mumps treated?", "Mumps treatment options", "Cure for mumps"],
+            "responses": ["Mumps is managed with rest, hydration, and pain relievers as there is no specific treatment."],
+            "context_set": ""
+        },
+        {
+            "tag": "mumps_prevention",
+            "patterns": ["How can I prevent mumps?", "Ways to avoid mumps", "Preventing mumps"],
+            "responses": ["Prevent mumps with the MMR vaccine and by practicing good hygiene."],
+            "context_set": ""
+        },
+        {
+            "tag": "rubella_symptoms",
+            "patterns": ["What are the symptoms of rubella?", "Signs of rubella", "How do I know if I have rubella?"],
+            "responses": ["Rubella symptoms include mild fever, headache, red rash, and swollen lymph nodes."],
+            "context_set": ""
+        },
+        {
+            "tag": "rubella_treatment",
+            "patterns": ["How is rubella treated?", "Rubella treatment options", "Cure for rubella"],
+            "responses": ["Rubella treatment is supportive, including rest and hydration, as symptoms typically resolve on their own."],
+            "context_set": ""
+        },
+        {
+            "tag": "rubella_prevention",
+            "patterns": ["How can I prevent rubella?", "Ways to avoid rubella", "Preventing rubella"],
+            "responses": ["Rubella prevention includes vaccination with the MMR vaccine."],
+            "context_set": ""
+        },
+        {
+            "tag": "whooping_cough_symptoms",
+            "patterns": ["What are the symptoms of whooping cough?", "Signs of pertussis", "How do I know if I have whooping cough?"],
+            "responses": ["Whooping cough symptoms include severe coughing fits, shortness of breath, vomiting, and fatigue."],
+            "context_set": ""
+        },
+        {
+            "tag": "whooping_cough_treatment",
+            "patterns": ["How is whooping cough treated?", "Whooping cough treatment options", "Cure for pertussis"],
+            "responses": ["Whooping cough treatment may involve antibiotics and supportive care for managing symptoms."],
+            "context_set": ""
+        },
+        {
+            "tag": "whooping_cough_prevention",
+            "patterns": ["How can I prevent whooping cough?", "Ways to avoid pertussis", "Preventing whooping cough"],
+            "responses": ["Prevent whooping cough with the DTaP vaccine and by avoiding close contact with infected individuals."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumonia_symptoms",
+            "patterns": ["What are the symptoms of pneumonia?", "Signs of pneumonia", "How do I know if I have pneumonia?"],
+            "responses": ["Pneumonia symptoms include cough with phlegm, fever, chills, shortness of breath, and chest pain."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumonia_treatment",
+            "patterns": ["How is pneumonia treated?", "Pneumonia treatment options", "Cure for pneumonia"],
+            "responses": ["Pneumonia treatment may involve antibiotics for bacterial cases, antivirals for viral cases, and supportive care."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumonia_prevention",
+            "patterns": ["How can I prevent pneumonia?", "Ways to avoid pneumonia", "Preventing pneumonia"],
+            "responses": ["Pneumonia prevention includes vaccination, practicing good hygiene, and avoiding smoking."],
+            "context_set": ""
+        },
+        {
+            "tag": "hiv_aids_symptoms",
+            "patterns": ["What are the symptoms of HIV/AIDS?", "Signs of HIV infection", "How do I know if I have HIV?"],
+            "responses": ["HIV/AIDS symptoms include fever, swollen lymph nodes, fatigue, weight loss, and frequent infections."],
+            "context_set": ""
+        },
+        {
+            "tag": "hiv_aids_treatment",
+            "patterns": ["How is HIV/AIDS treated?", "HIV treatment options", "Cure for HIV/AIDS"],
+            "responses": ["HIV is treated with antiretroviral therapy (ART) to manage the infection and prevent progression."],
+            "context_set": ""
+        },
+        {
+            "tag": "hiv_aids_prevention",
+            "patterns": ["How can I prevent HIV?", "Ways to avoid HIV/AIDS", "Preventing HIV/AIDS"],
+            "responses": ["Prevent HIV by using safe sex practices, regular testing, and avoiding needle sharing."],
+            "context_set": ""
+        },
+        {
+            "tag": "leprosy_symptoms",
+            "patterns": ["What are the symptoms of leprosy?", "Signs of leprosy", "How do I know if I have leprosy?"],
+            "responses": ["Leprosy symptoms include skin sores, numbness, and muscle weakness."],
+            "context_set": ""
+        },
+        {
+            "tag": "leprosy_treatment",
+            "patterns": ["How is leprosy treated?", "Leprosy treatment options", "Cure for leprosy"],
+            "responses": ["Leprosy is treated with multi-drug therapy (MDT) combining antibiotics like dapsone, rifampicin, and clofazimine."],
+            "context_set": ""
+        },
+        {
+            "tag": "leprosy_prevention",
+            "patterns": ["How can I prevent leprosy?", "Ways to avoid leprosy", "Preventing leprosy"],
+            "responses": ["Prevent leprosy by early detection, avoiding close contact with untreated individuals, and receiving the BCG vaccine in endemic areas."],
+            "context_set": ""
+        },
+        {
+            "tag": "filariasis_symptoms",
+            "patterns": ["What are the symptoms of filariasis?", "Signs of filariasis infection", "How do I know if I have filariasis?"],
+            "responses": ["Filariasis symptoms include fever, swollen lymph nodes, and elephantiasis in chronic cases."],
+            "context_set": ""
+        },
+        {
+            "tag": "filariasis_treatment",
+            "patterns": ["How is filariasis treated?", "Filariasis treatment options", "Cure for filariasis"],
+            "responses": ["Filariasis is treated with antiparasitic medications like diethylcarbamazine and ivermectin."],
+            "context_set": ""
+        },
+        {
+            "tag": "filariasis_prevention",
+            "patterns": ["How can I prevent filariasis?", "Ways to avoid filariasis", "Preventing filariasis"],
+            "responses": ["Prevent filariasis by using insect repellent, sleeping under mosquito nets, and taking preventive medications in endemic areas."],
+            "context_set": ""
+        },
+        {
+            "tag": "kala_azar_symptoms",
+            "patterns": ["What are the symptoms of Kala-Azar?", "Signs of leishmaniasis infection", "How do I know if I have Kala-Azar?"],
+            "responses": ["Kala-Azar symptoms include fever, weight loss, enlargement of the liver and spleen, and anemia."],
+            "context_set": ""
+        },
+        {
+            "tag": "kala_azar_treatment",
+            "patterns": ["How is Kala-Azar treated?", "Kala-Azar treatment options", "Cure for leishmaniasis"],
+            "responses": ["Kala-Azar is treated with antiparasitic drugs like amphotericin B and miltefosine."],
+            "context_set": ""
+        },
+        {
+            "tag": "kala_azar_prevention",
+            "patterns": ["How can I prevent Kala-Azar?", "Ways to avoid leishmaniasis", "Preventing Kala-Azar"],
+            "responses": ["Prevent Kala-Azar by using insect repellent, wearing protective clothing, and reducing sandfly breeding grounds."],
+            "context_set": ""
+        },
+        {
+            "tag": "rotavirus_symptoms",
+            "patterns": ["What are the symptoms of rotavirus?", "Signs of rotavirus infection", "How do I know if I have rotavirus?"],
+            "responses": ["Rotavirus symptoms include severe diarrhea, vomiting, fever, and abdominal pain, primarily in children."],
+            "context_set": ""
+        },
+        {
+            "tag": "rotavirus_treatment",
+            "patterns": ["How is rotavirus treated?", "Rotavirus treatment options", "Cure for rotavirus"],
+            "responses": ["Rotavirus treatment focuses on rehydration and electrolyte replacement as there is no specific antiviral medication."],
+            "context_set": ""
+        },
+        {
+            "tag": "rotavirus_prevention",
+            "patterns": ["How can I prevent rotavirus?", "Ways to avoid rotavirus", "Preventing rotavirus"],
+            "responses": ["Prevent rotavirus with the rotavirus vaccine, good hygiene, and proper handwashing."],
+            "context_set": ""
+        },
+        {
+            "tag": "norovirus_symptoms",
+            "patterns": ["What are the symptoms of norovirus?", "Signs of norovirus infection", "How do I know if I have norovirus?"],
+            "responses": ["Norovirus symptoms include sudden vomiting, diarrhea, nausea, and stomach cramps."],
+            "context_set": ""
+        },
+        {
+            "tag": "norovirus_treatment",
+            "patterns": ["How is norovirus treated?", "Norovirus treatment options", "Cure for norovirus"],
+            "responses": ["Norovirus treatment is mainly supportive with hydration; there is no specific antiviral treatment."],
+            "context_set": ""
+        },
+        {
+            "tag": "norovirus_prevention",
+            "patterns": ["How can I prevent norovirus?", "Ways to avoid norovirus", "Preventing norovirus"],
+            "responses": ["Prevent norovirus by washing hands frequently, disinfecting surfaces, and avoiding contaminated food and water."],
+            "context_set": ""
+        },
+        {
+            "tag": "amoebiasis_symptoms",
+            "patterns": ["What are the symptoms of amoebiasis?", "Signs of amoebiasis infection", "How do I know if I have amoebiasis?"],
+            "responses": ["Amoebiasis symptoms include diarrhea, abdominal cramps, and, in severe cases, blood in stools."],
+            "context_set": ""
+        },
+        {
+            "tag": "amoebiasis_treatment",
+            "patterns": ["How is amoebiasis treated?", "Amoebiasis treatment options", "Cure for amoebiasis"],
+            "responses": ["Amoebiasis is treated with antibiotics like metronidazole and sometimes a follow-up with luminal agents."],
+            "context_set": ""
+        },
+        {
+            "tag": "amoebiasis_prevention",
+            "patterns": ["How can I prevent amoebiasis?", "Ways to avoid amoebiasis", "Preventing amoebiasis"],
+            "responses": ["Prevent amoebiasis by drinking clean water, practicing good hygiene, and avoiding uncooked foods in endemic areas."],
+            "context_set": ""
+        },
+        {
+            "tag": "giardiasis_symptoms",
+            "patterns": ["What are the symptoms of giardiasis?", "Signs of giardiasis infection", "How do I know if I have giardiasis?"],
+            "responses": ["Giardiasis symptoms include diarrhea, gas, stomach cramps, and dehydration."],
+            "context_set": ""
+        },
+        {
+            "tag": "giardiasis_treatment",
+            "patterns": ["How is giardiasis treated?", "Giardiasis treatment options", "Cure for giardiasis"],
+            "responses": ["Giardiasis is treated with antibiotics like metronidazole or tinidazole."],
+            "context_set": ""
+        },
+        {
+            "tag": "giardiasis_prevention",
+            "patterns": ["How can I prevent giardiasis?", "Ways to avoid giardiasis", "Preventing giardiasis"],
+            "responses": ["Prevent giardiasis by drinking clean water, practicing good hygiene, and avoiding contaminated food."],
+            "context_set": ""
+        },
+        {
+            "tag": "hookworm_infection_symptoms",
+            "patterns": ["What are the symptoms of hookworm infection?", "Signs of hookworm infection", "How do I know if I have hookworm?"],
+            "responses": ["Hookworm infection symptoms include itchy rash, abdominal pain, diarrhea, and anemia."],
+            "context_set": ""
+        },
+        {
+            "tag": "hookworm_infection_treatment",
+            "patterns": ["How is hookworm infection treated?", "Hookworm treatment options", "Cure for hookworm infection"],
+            "responses": ["Hookworm infection is treated with antiparasitic drugs such as albendazole and mebendazole."],
+            "context_set": ""
+        },
+        {
+            "tag": "hookworm_infection_prevention",
+            "patterns": ["How can I prevent hookworm infection?", "Ways to avoid hookworm", "Preventing hookworm infection"],
+            "responses": ["Prevent hookworm infection by wearing shoes, practicing good sanitation, and avoiding contact with contaminated soil."],
+            "context_set": ""
+        },
+        {
+            "tag": "schistosomiasis_symptoms",
+            "patterns": ["What are the symptoms of schistosomiasis?", "Signs of schistosomiasis infection", "How do I know if I have schistosomiasis?"],
+            "responses": ["Schistosomiasis symptoms include rash, fever, chills, muscle aches, and in severe cases, liver and bladder issues."],
+            "context_set": ""
+        },
+        {
+            "tag": "schistosomiasis_treatment",
+            "patterns": ["How is schistosomiasis treated?", "Schistosomiasis treatment options", "Cure for schistosomiasis"],
+            "responses": ["Schistosomiasis is treated with the antiparasitic drug praziquantel."],
+            "context_set": ""
+        },
+        {
+            "tag": "schistosomiasis_prevention",
+            "patterns": ["How can I prevent schistosomiasis?", "Ways to avoid schistosomiasis", "Preventing schistosomiasis"],
+            "responses": ["Prevent schistosomiasis by avoiding swimming in freshwater sources in endemic areas and using clean water sources."],
+            "context_set": ""
+        },
+        {
+            "tag": "asthma_symptoms",
+            "patterns": ["What are the symptoms of asthma?", "Signs of asthma", "How do I know if I have asthma?"],
+            "responses": ["Asthma symptoms include shortness of breath, chest tightness, wheezing, and coughing, especially at night or early morning."],
+            "context_set": ""
+        },
+        {
+            "tag": "asthma_treatment",
+            "patterns": ["How is asthma treated?", "Asthma treatment options", "Cure for asthma"],
+            "responses": ["Asthma is managed with inhalers, medications like bronchodilators, and lifestyle adjustments to avoid triggers."],
+            "context_set": ""
+        },
+        {
+            "tag": "asthma_prevention",
+            "patterns": ["How can I prevent asthma?", "Ways to avoid asthma", "Preventing asthma"],
+            "responses": ["Prevent asthma attacks by avoiding allergens, managing stress, and regularly using prescribed medications."],
+            "context_set": ""
+        },
+        {
+            "tag": "copd_symptoms",
+            "patterns": ["What are the symptoms of COPD?", "Signs of COPD", "How do I know if I have COPD?"],
+            "responses": ["COPD symptoms include chronic cough, shortness of breath, wheezing, and frequent respiratory infections."],
+            "context_set": ""
+        },
+        {
+            "tag": "copd_treatment",
+            "patterns": ["How is COPD treated?", "COPD treatment options", "Cure for COPD"],
+            "responses": ["COPD is managed with bronchodilators, steroids, oxygen therapy, and pulmonary rehabilitation."],
+            "context_set": ""
+        },
+        {
+            "tag": "copd_prevention",
+            "patterns": ["How can I prevent COPD?", "Ways to avoid COPD", "Preventing COPD"],
+            "responses": ["Prevent COPD by avoiding smoking, reducing exposure to pollutants, and getting vaccinated against respiratory infections."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumoconiosis_symptoms",
+            "patterns": ["What are the symptoms of pneumoconiosis?", "Signs of pneumoconiosis", "How do I know if I have pneumoconiosis?"],
+            "responses": ["Pneumoconiosis symptoms include cough, difficulty breathing, chest pain, and in severe cases, progressive lung damage."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumoconiosis_treatment",
+            "patterns": ["How is pneumoconiosis treated?", "Pneumoconiosis treatment options", "Cure for pneumoconiosis"],
+            "responses": ["Pneumoconiosis management includes stopping exposure to dust, medications for symptom relief, and oxygen therapy."],
+            "context_set": ""
+        },
+        {
+            "tag": "pneumoconiosis_prevention",
+            "patterns": ["How can I prevent pneumoconiosis?", "Ways to avoid pneumoconiosis", "Preventing pneumoconiosis"],
+            "responses": ["Prevent pneumoconiosis by using protective respiratory equipment in dusty environments and following workplace safety guidelines."],
+            "context_set": ""
+        },
+        {
+            "tag": "lung_cancer_symptoms",
+            "patterns": ["What are the symptoms of lung cancer?", "Signs of lung cancer", "How do I know if I have lung cancer?"],
+            "responses": ["Lung cancer symptoms include persistent cough, chest pain, shortness of breath, weight loss, and coughing up blood."],
+            "context_set": ""
+        },
+        {
+            "tag": "lung_cancer_treatment",
+            "patterns": ["How is lung cancer treated?", "Lung cancer treatment options", "Cure for lung cancer"],
+            "responses": ["Lung cancer treatment options include surgery, chemotherapy, radiation therapy, and targeted drug therapies."],
+            "context_set": ""
+        },
+        {
+            "tag": "lung_cancer_prevention",
+            "patterns": ["How can I prevent lung cancer?", "Ways to avoid lung cancer", "Preventing lung cancer"],
+            "responses": ["Prevent lung cancer by avoiding smoking, limiting exposure to secondhand smoke, and avoiding pollutants and carcinogens."],
+            "context_set": ""
+        },
+        {
+            "tag": "sinusitis_symptoms",
+            "patterns": ["What are the symptoms of sinusitis?", "Signs of sinusitis", "How do I know if I have sinusitis?"],
+            "responses": ["Sinusitis symptoms include facial pain, nasal congestion, headache, and thick nasal discharge."],
+            "context_set": ""
+        },
+        {
+            "tag": "sinusitis_treatment",
+            "patterns": ["How is sinusitis treated?", "Sinusitis treatment options", "Cure for sinusitis"],
+            "responses": ["Sinusitis is treated with decongestants, nasal sprays, antibiotics for bacterial infections, and sometimes surgery for chronic cases."],
+            "context_set": ""
+        },
+        {
+            "tag": "sinusitis_prevention",
+            "patterns": ["How can I prevent sinusitis?", "Ways to avoid sinusitis", "Preventing sinusitis"],
+            "responses": ["Prevent sinusitis by avoiding allergens, practicing good hygiene, and using a humidifier to keep nasal passages moist."],
+            "context_set": ""
+        },
+        {
+            "tag": "bronchitis_symptoms",
+            "patterns": ["What are the symptoms of bronchitis?", "Signs of bronchitis", "How do I know if I have bronchitis?"],
+            "responses": ["Bronchitis symptoms include a persistent cough, mucus production, fatigue, and chest discomfort."],
+            "context_set": ""
+        },
+        {
+            "tag": "bronchitis_treatment",
+            "patterns": ["How is bronchitis treated?", "Bronchitis treatment options", "Cure for bronchitis"],
+            "responses": ["Bronchitis treatment includes rest, hydration, cough suppressants, and sometimes antibiotics for bacterial infections."],
+            "context_set": ""
+        },
+        {
+            "tag": "bronchitis_prevention",
+            "patterns": ["How can I prevent bronchitis?", "Ways to avoid bronchitis", "Preventing bronchitis"],
+            "responses": ["Prevent bronchitis by avoiding smoking, washing hands frequently, and wearing masks in polluted areas."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergic_rhinitis_symptoms",
+            "patterns": ["What are the symptoms of allergic rhinitis?", "Signs of allergic rhinitis", "How do I know if I have allergic rhinitis?"],
+            "responses": ["Allergic rhinitis symptoms include sneezing, runny nose, itchy eyes, and congestion, often triggered by allergens."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergic_rhinitis_treatment",
+            "patterns": ["How is allergic rhinitis treated?", "Allergic rhinitis treatment options", "Cure for allergic rhinitis"],
+            "responses": ["Allergic rhinitis is treated with antihistamines, nasal corticosteroids, and avoiding allergens."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergic_rhinitis_prevention",
+            "patterns": ["How can I prevent allergic rhinitis?", "Ways to avoid allergic rhinitis", "Preventing allergic rhinitis"],
+            "responses": ["Prevent allergic rhinitis by minimizing exposure to allergens, using air purifiers, and keeping windows closed during high pollen days."],
+            "context_set": ""
+        },
+        {
+            "tag": "emphysema_symptoms",
+            "patterns": ["What are the symptoms of emphysema?", "Signs of emphysema", "How do I know if I have emphysema?"],
+            "responses": ["Emphysema symptoms include shortness of breath, chronic cough, fatigue, and reduced tolerance for physical activity."],
+            "context_set": ""
+        },
+        {
+            "tag": "emphysema_treatment",
+            "patterns": ["How is emphysema treated?", "Emphysema treatment options", "Cure for emphysema"],
+            "responses": ["Emphysema is managed with bronchodilators, inhaled steroids, oxygen therapy, and in severe cases, surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "emphysema_prevention",
+            "patterns": ["How can I prevent emphysema?", "Ways to avoid emphysema", "Preventing emphysema"],
+            "responses": ["Prevent emphysema by avoiding smoking, reducing exposure to air pollution, and practicing respiratory exercises."],
+            "context_set": ""
+        },
+        {
+            "tag": "cataract_symptoms",
+            "patterns": ["What are the symptoms of cataract?", "Signs of cataract", "How do I know if I have cataract?"],
+            "responses": ["Cataract symptoms include blurry vision, sensitivity to light, seeing 'halos' around lights, and colors appearing faded."],
+            "context_set": ""
+        },
+        {
+            "tag": "cataract_treatment",
+            "patterns": ["How is cataract treated?", "Cataract treatment options", "Cure for cataract"],
+            "responses": ["Cataract treatment typically involves surgery to replace the clouded lens with an artificial one."],
+            "context_set": ""
+        },
+        {
+            "tag": "cataract_prevention",
+            "patterns": ["How can I prevent cataract?", "Ways to avoid cataract", "Preventing cataract"],
+            "responses": ["Prevent cataracts by wearing UV-protective sunglasses, avoiding smoking, and managing health conditions like diabetes."],
+            "context_set": ""
+        },
+        {
+            "tag": "glaucoma_symptoms",
+            "patterns": ["What are the symptoms of glaucoma?", "Signs of glaucoma", "How do I know if I have glaucoma?"],
+            "responses": ["Glaucoma symptoms may include gradual vision loss, eye pain, headaches, and seeing halos around lights."],
+            "context_set": ""
+        },
+        {
+            "tag": "glaucoma_treatment",
+            "patterns": ["How is glaucoma treated?", "Glaucoma treatment options", "Cure for glaucoma"],
+            "responses": ["Glaucoma is treated with eye drops, medications, laser treatment, and sometimes surgery to lower eye pressure."],
+            "context_set": ""
+        },
+        {
+            "tag": "glaucoma_prevention",
+            "patterns": ["How can I prevent glaucoma?", "Ways to avoid glaucoma", "Preventing glaucoma"],
+            "responses": ["Prevent glaucoma by getting regular eye exams, exercising regularly, and managing health conditions like diabetes and high blood pressure."],
+            "context_set": ""
+        },
+        {
+            "tag": "refractive_errors_symptoms",
+            "patterns": ["What are the symptoms of refractive errors?", "Signs of myopia", "How do I know if I have refractive errors?"],
+            "responses": ["Refractive errors symptoms include blurry vision, eye strain, headaches, and difficulty seeing at certain distances."],
+            "context_set": ""
+        },
+        {
+            "tag": "refractive_errors_treatment",
+            "patterns": ["How are refractive errors treated?", "Treatment for myopia", "Cure for hyperopia"],
+            "responses": ["Refractive errors are corrected with glasses, contact lenses, or laser surgery like LASIK."],
+            "context_set": ""
+        },
+        {
+            "tag": "refractive_errors_prevention",
+            "patterns": ["How can I prevent refractive errors?", "Ways to avoid myopia", "Preventing hyperopia"],
+            "responses": ["Prevent worsening refractive errors by taking regular breaks from screens, maintaining proper lighting, and getting regular eye check-ups."],
+            "context_set": ""
+        },
+        {
+            "tag": "conjunctivitis_symptoms",
+            "patterns": ["What are the symptoms of conjunctivitis?", "Signs of conjunctivitis", "How do I know if I have conjunctivitis?"],
+            "responses": ["Conjunctivitis symptoms include redness, itchiness, and discharge from the eye, often making it difficult to open in the morning."],
+            "context_set": ""
+        },
+        {
+            "tag": "conjunctivitis_treatment",
+            "patterns": ["How is conjunctivitis treated?", "Conjunctivitis treatment options", "Cure for conjunctivitis"],
+            "responses": ["Conjunctivitis treatment includes using eye drops, antibiotics for bacterial infections, and avoiding eye rubbing."],
+            "context_set": ""
+        },
+        {
+            "tag": "conjunctivitis_prevention",
+            "patterns": ["How can I prevent conjunctivitis?", "Ways to avoid conjunctivitis", "Preventing conjunctivitis"],
+            "responses": ["Prevent conjunctivitis by practicing good hygiene, washing hands frequently, and avoiding sharing towels or eye makeup."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetic_retinopathy_symptoms",
+            "patterns": ["What are the symptoms of diabetic retinopathy?", "Signs of diabetic retinopathy", "How do I know if I have diabetic retinopathy?"],
+            "responses": ["Diabetic retinopathy symptoms include blurry vision, floaters, and dark or empty spots in your vision."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetic_retinopathy_treatment",
+            "patterns": ["How is diabetic retinopathy treated?", "Diabetic retinopathy treatment options", "Cure for diabetic retinopathy"],
+            "responses": ["Diabetic retinopathy is treated with laser surgery, injections, and managing blood sugar levels effectively."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetic_retinopathy_prevention",
+            "patterns": ["How can I prevent diabetic retinopathy?", "Ways to avoid diabetic retinopathy", "Preventing diabetic retinopathy"],
+            "responses": ["Prevent diabetic retinopathy by controlling blood sugar, blood pressure, and cholesterol, and having regular eye exams."],
+            "context_set": ""
+        },
+        {
+            "tag": "depression_symptoms",
+            "patterns": ["What are the symptoms of depression?", "Signs of depression", "How do I know if I have depression?"],
+            "responses": ["Depression symptoms include persistent sadness, lack of interest in activities, fatigue, and changes in sleep or appetite."],
+            "context_set": ""
+        },
+        {
+            "tag": "depression_treatment",
+            "patterns": ["How is depression treated?", "Depression treatment options", "Cure for depression"],
+            "responses": ["Depression is treated with therapy, medications, lifestyle changes, and sometimes holistic approaches like meditation."],
+            "context_set": ""
+        },
+        {
+            "tag": "depression_prevention",
+            "patterns": ["How can I prevent depression?", "Ways to avoid depression", "Preventing depression"],
+            "responses": ["Prevent depression by practicing self-care, connecting with others, managing stress, and seeking help early if needed."],
+            "context_set": ""
+        },
+        {
+            "tag": "anxiety_disorders_symptoms",
+            "patterns": ["What are the symptoms of anxiety disorders?", "Signs of anxiety disorders", "How do I know if I have anxiety disorders?"],
+            "responses": ["Anxiety disorder symptoms include excessive worry, restlessness, fatigue, muscle tension, and difficulty concentrating."],
+            "context_set": ""
+        },
+        {
+            "tag": "anxiety_disorders_treatment",
+            "patterns": ["How are anxiety disorders treated?", "Anxiety treatment options", "Cure for anxiety disorders"],
+            "responses": ["Anxiety disorders are treated with therapy, medication, stress management, and relaxation techniques."],
+            "context_set": ""
+        },
+        {
+            "tag": "anxiety_disorders_prevention",
+            "patterns": ["How can I prevent anxiety disorders?", "Ways to avoid anxiety", "Preventing anxiety disorders"],
+            "responses": ["Prevent anxiety disorders by practicing mindfulness, managing stress, maintaining a balanced lifestyle, and getting adequate sleep."],
+            "context_set": ""
+        },
+        {
+            "tag": "gastroenteritis_symptoms",
+            "patterns": ["What are the symptoms of gastroenteritis?", "Signs of gastroenteritis", "How do I know if I have gastroenteritis?"],
+            "responses": ["Gastroenteritis symptoms include nausea, vomiting, diarrhea, abdominal cramps, and sometimes fever."],
+            "context_set": ""
+        },
+        {
+            "tag": "gastroenteritis_treatment",
+            "patterns": ["How is gastroenteritis treated?", "Gastroenteritis treatment options", "Cure for gastroenteritis"],
+            "responses": ["Gastroenteritis is treated with hydration, rest, and over-the-counter medications for symptom relief. Antibiotics may be needed for bacterial infections."],
+            "context_set": ""
+        },
+        {
+            "tag": "gastroenteritis_prevention",
+            "patterns": ["How can I prevent gastroenteritis?", "Ways to avoid gastroenteritis", "Preventing gastroenteritis"],
+            "responses": ["Prevent gastroenteritis by washing hands frequently, avoiding contaminated food and water, and practicing safe food handling."],
+            "context_set": ""
+        },
+        {
+            "tag": "ibs_symptoms",
+            "patterns": ["What are the symptoms of IBS?", "Signs of irritable bowel syndrome", "How do I know if I have IBS?"],
+            "responses": ["IBS symptoms include abdominal pain, bloating, gas, and changes in bowel habits such as diarrhea or constipation."],
+            "context_set": ""
+        },
+        {
+            "tag": "ibs_treatment",
+            "patterns": ["How is IBS treated?", "IBS treatment options", "Cure for IBS"],
+            "responses": ["IBS treatment includes dietary changes, medications, probiotics, and stress management techniques."],
+            "context_set": ""
+        },
+        {
+            "tag": "ibs_prevention",
+            "patterns": ["How can I prevent IBS?", "Ways to avoid IBS", "Preventing irritable bowel syndrome"],
+            "responses": ["Prevent IBS by eating a balanced diet, managing stress, and avoiding foods that trigger symptoms."],
+            "context_set": ""
+        },
+        {
+            "tag": "peptic_ulcers_symptoms",
+            "patterns": ["What are the symptoms of peptic ulcers?", "Signs of peptic ulcers", "How do I know if I have peptic ulcers?"],
+            "responses": ["Peptic ulcer symptoms include burning stomach pain, bloating, heartburn, and nausea."],
+            "context_set": ""
+        },
+        {
+            "tag": "peptic_ulcers_treatment",
+            "patterns": ["How are peptic ulcers treated?", "Peptic ulcer treatment options", "Cure for peptic ulcers"],
+            "responses": ["Peptic ulcers are treated with antibiotics for infections, antacids, and medications to reduce stomach acid."],
+            "context_set": ""
+        },
+        {
+            "tag": "peptic_ulcers_prevention",
+            "patterns": ["How can I prevent peptic ulcers?", "Ways to avoid peptic ulcers", "Preventing peptic ulcers"],
+            "responses": ["Prevent peptic ulcers by avoiding nonsteroidal anti-inflammatory drugs, limiting alcohol, and not smoking."],
+            "context_set": ""
+        },
+        {
+            "tag": "gerd_symptoms",
+            "patterns": ["What are the symptoms of GERD?", "Signs of gastroesophageal reflux disease", "How do I know if I have GERD?"],
+            "responses": ["GERD symptoms include heartburn, regurgitation, chest pain, and difficulty swallowing."],
+            "context_set": ""
+        },
+        {
+            "tag": "gerd_treatment",
+            "patterns": ["How is GERD treated?", "GERD treatment options", "Cure for GERD"],
+            "responses": ["GERD treatment includes lifestyle changes, medications to reduce acid production, and sometimes surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "gerd_prevention",
+            "patterns": ["How can I prevent GERD?", "Ways to avoid GERD", "Preventing gastroesophageal reflux disease"],
+            "responses": ["Prevent GERD by avoiding large meals, not lying down after eating, avoiding trigger foods, and maintaining a healthy weight."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_symptoms",
+            "patterns": ["What are the symptoms of hepatitis?", "Signs of hepatitis", "How do I know if I have hepatitis?"],
+            "responses": ["Hepatitis symptoms include fatigue, jaundice, dark urine, abdominal pain, and loss of appetite."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_treatment",
+            "patterns": ["How is hepatitis treated?", "Hepatitis treatment options", "Cure for hepatitis"],
+            "responses": ["Hepatitis treatment varies by type, including antiviral medications, immune-modulating therapies, and supportive care."],
+            "context_set": ""
+        },
+        {
+            "tag": "hepatitis_prevention",
+            "patterns": ["How can I prevent hepatitis?", "Ways to avoid hepatitis", "Preventing hepatitis"],
+            "responses": ["Prevent hepatitis by getting vaccinated, practicing safe hygiene, and avoiding sharing needles or personal items."],
+            "context_set": ""
+        },
+        {
+            "tag": "liver_cirrhosis_symptoms",
+            "patterns": ["What are the symptoms of liver cirrhosis?", "Signs of liver cirrhosis", "How do I know if I have liver cirrhosis?"],
+            "responses": ["Liver cirrhosis symptoms include fatigue, jaundice, abdominal swelling, confusion, and easy bruising."],
+            "context_set": ""
+        },
+        {
+            "tag": "liver_cirrhosis_treatment",
+            "patterns": ["How is liver cirrhosis treated?", "Liver cirrhosis treatment options", "Cure for liver cirrhosis"],
+            "responses": ["Liver cirrhosis treatment includes managing the underlying cause, medications, lifestyle changes, and in severe cases, liver transplant."],
+            "context_set": ""
+        },
+        {
+            "tag": "liver_cirrhosis_prevention",
+            "patterns": ["How can I prevent liver cirrhosis?", "Ways to avoid liver cirrhosis", "Preventing liver cirrhosis"],
+            "responses": ["Prevent liver cirrhosis by avoiding alcohol, getting vaccinated for hepatitis, and maintaining a healthy weight."],
+            "context_set": ""
+        },
+        {
+            "tag": "gallstones_symptoms",
+            "patterns": ["What are the symptoms of gallstones?", "Signs of gallstones", "How do I know if I have gallstones?"],
+            "responses": ["Gallstone symptoms include sudden and intense pain in the upper right abdomen, nausea, and vomiting."],
+            "context_set": ""
+        },
+        {
+            "tag": "gallstones_treatment",
+            "patterns": ["How are gallstones treated?", "Gallstone treatment options", "Cure for gallstones"],
+            "responses": ["Gallstones are treated with pain management, medications to dissolve stones, or surgical removal of the gallbladder."],
+            "context_set": ""
+        },
+        {
+            "tag": "gallstones_prevention",
+            "patterns": ["How can I prevent gallstones?", "Ways to avoid gallstones", "Preventing gallstones"],
+            "responses": ["Prevent gallstones by maintaining a healthy weight, eating a balanced diet, and avoiding rapid weight loss."],
+            "context_set": ""
+        },
+        {
+            "tag": "pancreatitis_symptoms",
+            "patterns": ["What are the symptoms of pancreatitis?", "Signs of pancreatitis", "How do I know if I have pancreatitis?"],
+            "responses": ["Pancreatitis symptoms include upper abdominal pain, nausea, vomiting, and fever."],
+            "context_set": ""
+        },
+        {
+            "tag": "pancreatitis_treatment",
+            "patterns": ["How is pancreatitis treated?", "Pancreatitis treatment options", "Cure for pancreatitis"],
+            "responses": ["Pancreatitis treatment involves fasting to rest the pancreas, intravenous fluids, pain management, and treating underlying causes."],
+            "context_set": ""
+        },
+        {
+            "tag": "pancreatitis_prevention",
+            "patterns": ["How can I prevent pancreatitis?", "Ways to avoid pancreatitis", "Preventing pancreatitis"],
+            "responses": ["Prevent pancreatitis by avoiding excessive alcohol, maintaining a healthy diet, and managing cholesterol levels."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_mellitus_symptoms",
+            "patterns": ["What are the symptoms of diabetes?", "Signs of diabetes", "How do I know if I have diabetes?"],
+            "responses": ["Symptoms of diabetes include frequent urination, excessive thirst, fatigue, blurred vision, and slow healing of cuts or bruises."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_mellitus_treatment",
+            "patterns": ["How is diabetes treated?", "Diabetes treatment options", "Cure for diabetes"],
+            "responses": ["Diabetes treatment includes monitoring blood sugar levels, insulin therapy, oral medications, and lifestyle changes such as diet and exercise."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_mellitus_prevention",
+            "patterns": ["How can I prevent diabetes?", "Ways to avoid diabetes", "Preventing diabetes"],
+            "responses": ["Prevent type 2 diabetes by maintaining a healthy weight, eating a balanced diet, and engaging in regular physical activity."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypothyroidism_symptoms",
+            "patterns": ["What are the symptoms of hypothyroidism?", "Signs of hypothyroidism", "How do I know if I have hypothyroidism?"],
+            "responses": ["Hypothyroidism symptoms include fatigue, weight gain, cold intolerance, dry skin, and constipation."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypothyroidism_treatment",
+            "patterns": ["How is hypothyroidism treated?", "Hypothyroidism treatment options", "Cure for hypothyroidism"],
+            "responses": ["Hypothyroidism is treated with daily thyroid hormone replacement medications like levothyroxine."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypothyroidism_prevention",
+            "patterns": ["How can I prevent hypothyroidism?", "Ways to avoid hypothyroidism", "Preventing hypothyroidism"],
+            "responses": ["Hypothyroidism cannot always be prevented, but avoiding excessive iodine intake and managing autoimmune conditions may reduce risk."],
+            "context_set": ""
+        },
+        {
+            "tag": "hyperthyroidism_symptoms",
+            "patterns": ["What are the symptoms of hyperthyroidism?", "Signs of hyperthyroidism", "How do I know if I have hyperthyroidism?"],
+            "responses": ["Hyperthyroidism symptoms include weight loss, rapid heartbeat, sweating, nervousness, and tremors."],
+            "context_set": ""
+        },
+        {
+            "tag": "hyperthyroidism_treatment",
+            "patterns": ["How is hyperthyroidism treated?", "Hyperthyroidism treatment options", "Cure for hyperthyroidism"],
+            "responses": ["Hyperthyroidism treatment options include antithyroid medications, radioactive iodine therapy, and sometimes surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "hyperthyroidism_prevention",
+            "patterns": ["How can I prevent hyperthyroidism?", "Ways to avoid hyperthyroidism", "Preventing hyperthyroidism"],
+            "responses": ["Hyperthyroidism may not be entirely preventable, but reducing iodine intake can help for those with predisposing conditions."],
+            "context_set": ""
+        },
+        {
+            "tag": "goiter_symptoms",
+            "patterns": ["What are the symptoms of goiter?", "Signs of goiter", "How do I know if I have goiter?"],
+            "responses": ["Goiter symptoms include swelling at the base of the neck, difficulty swallowing or breathing, and sometimes hoarseness."],
+            "context_set": ""
+        },
+        {
+            "tag": "goiter_treatment",
+            "patterns": ["How is goiter treated?", "Goiter treatment options", "Cure for goiter"],
+            "responses": ["Goiter treatment includes iodine supplementation, thyroid hormone replacement, and surgery in severe cases."],
+            "context_set": ""
+        },
+        {
+            "tag": "goiter_prevention",
+            "patterns": ["How can I prevent goiter?", "Ways to avoid goiter", "Preventing goiter"],
+            "responses": ["Prevent goiter by maintaining adequate iodine intake through diet or iodized salt."],
+            "context_set": ""
+        },
+        {
+            "tag": "obesity_symptoms",
+            "patterns": ["What are the symptoms of obesity?", "Signs of obesity", "How do I know if I have obesity?"],
+            "responses": ["Obesity is identified by a high body mass index (BMI) and can lead to symptoms such as breathlessness, fatigue, and joint pain."],
+            "context_set": ""
+        },
+        {
+            "tag": "obesity_treatment",
+            "patterns": ["How is obesity treated?", "Obesity treatment options", "Cure for obesity"],
+            "responses": ["Obesity treatment includes dietary changes, increased physical activity, behavioral therapy, and sometimes medications or surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "obesity_prevention",
+            "patterns": ["How can I prevent obesity?", "Ways to avoid obesity", "Preventing obesity"],
+            "responses": ["Prevent obesity by maintaining a balanced diet, staying physically active, and avoiding excessive calorie intake."],
+            "context_set": ""
+        },
+        {
+            "tag": "vitamin_d_deficiency_symptoms",
+            "patterns": ["What are the symptoms of vitamin D deficiency?", "Signs of vitamin D deficiency", "How do I know if I have vitamin D deficiency?"],
+            "responses": ["Vitamin D deficiency symptoms include fatigue, bone pain, muscle weakness, and mood changes like depression."],
+            "context_set": ""
+        },
+        {
+            "tag": "vitamin_d_deficiency_treatment",
+            "patterns": ["How is vitamin D deficiency treated?", "Vitamin D deficiency treatment options", "Cure for vitamin D deficiency"],
+            "responses": ["Vitamin D deficiency is treated with dietary supplements, sun exposure, and vitamin D-rich foods like fish and fortified dairy."],
+            "context_set": ""
+        },
+        {
+            "tag": "vitamin_d_deficiency_prevention",
+            "patterns": ["How can I prevent vitamin D deficiency?", "Ways to avoid vitamin D deficiency", "Preventing vitamin D deficiency"],
+            "responses": ["Prevent vitamin D deficiency by getting adequate sun exposure, eating vitamin D-rich foods, and taking supplements if needed."],
+            "context_set": ""
+        },
+        {
+            "tag": "calcium_deficiency_symptoms",
+            "patterns": ["What are the symptoms of calcium deficiency?", "Signs of calcium deficiency", "How do I know if I have calcium deficiency?"],
+            "responses": ["Calcium deficiency symptoms include muscle cramps, brittle nails, numbness in hands or feet, and in severe cases, osteoporosis."],
+            "context_set": ""
+        },
+        {
+            "tag": "calcium_deficiency_treatment",
+            "patterns": ["How is calcium deficiency treated?", "Calcium deficiency treatment options", "Cure for calcium deficiency"],
+            "responses": ["Calcium deficiency is treated with calcium-rich foods, supplements, and sometimes medications to improve calcium absorption."],
+            "context_set": ""
+        },
+        {
+            "tag": "calcium_deficiency_prevention",
+            "patterns": ["How can I prevent calcium deficiency?", "Ways to avoid calcium deficiency", "Preventing calcium deficiency"],
+            "responses": ["Prevent calcium deficiency by eating calcium-rich foods like dairy, leafy greens, and fortified products."],
+            "context_set": ""
+        },
+        {
+            "tag": "iron_deficiency_anemia_symptoms",
+            "patterns": ["What are the symptoms of iron deficiency anemia?", "Signs of iron deficiency anemia", "How do I know if I have iron deficiency anemia?"],
+            "responses": ["Iron deficiency anemia symptoms include fatigue, weakness, pale skin, shortness of breath, and brittle nails."],
+            "context_set": ""
+        },
+        {
+            "tag": "iron_deficiency_anemia_treatment",
+            "patterns": ["How is iron deficiency anemia treated?", "Iron deficiency anemia treatment options", "Cure for iron deficiency anemia"],
+            "responses": ["Iron deficiency anemia is treated with iron supplements and iron-rich foods such as red meat, beans, and leafy greens."],
+            "context_set": ""
+        },
+        {
+            "tag": "iron_deficiency_anemia_prevention",
+            "patterns": ["How can I prevent iron deficiency anemia?", "Ways to avoid iron deficiency anemia", "Preventing iron deficiency anemia"],
+            "responses": ["Prevent iron deficiency anemia by consuming a diet rich in iron, including meat, beans, and fortified cereals."],
+            "context_set": ""
+        },
+        {
+            "tag": "parkinson_symptoms",
+            "patterns": ["What are the symptoms of Parkinson's disease?", "Signs of Parkinson's", "How do I know if I have Parkinson's?"],
+            "responses": ["Parkinson's symptoms include tremors, stiffness, slowness of movement, and balance problems."],
+            "context_set": ""
+        },
+        {
+            "tag": "parkinson_treatment",
+            "patterns": ["How is Parkinson's disease treated?", "Parkinson's treatment options", "Cure for Parkinson's"],
+            "responses": ["Parkinson's treatment may include medications, physical therapy, and sometimes surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "parkinson_prevention",
+            "patterns": ["How can I prevent Parkinson's disease?", "Ways to avoid Parkinson's", "Preventing Parkinson's"],
+            "responses": ["Currently, there is no known way to prevent Parkinson's disease, but maintaining a healthy lifestyle may help reduce risk."],
+            "context_set": ""
+        },
+        {
+            "tag": "arthritis_symptoms",
+            "patterns": ["What are the symptoms of arthritis?", "Signs of arthritis", "How do I know if I have arthritis?"],
+            "responses": ["Arthritis symptoms include joint pain, swelling, stiffness, and decreased range of motion."],
+            "context_set": ""
+        },
+        {
+            "tag": "arthritis_treatment",
+            "patterns": ["How is arthritis treated?", "Arthritis treatment options", "Cure for arthritis"],
+            "responses": ["Arthritis treatment includes medications, physical therapy, and lifestyle changes."],
+            "context_set": ""
+        },
+        {
+            "tag": "arthritis_prevention",
+            "patterns": ["How can I prevent arthritis?", "Ways to avoid arthritis", "Preventing arthritis"],
+            "responses": ["Prevent arthritis by maintaining a healthy weight, exercising, and avoiding joint injuries."],
+            "context_set": ""
+        },
+        {
+            "tag": "cancer_symptoms",
+            "patterns": ["What are the symptoms of cancer?", "Signs of cancer", "How do I know if I have cancer?"],
+            "responses": ["Cancer symptoms vary but may include unexplained weight loss, fatigue, and changes in appetite."],
+            "context_set": ""
+        },
+        {
+            "tag": "cancer_treatment",
+            "patterns": ["How is cancer treated?", "Cancer treatment options", "Cure for cancer"],
+            "responses": ["Cancer treatment may involve chemotherapy, radiation therapy, surgery, or immunotherapy."],
+            "context_set": ""
+        },
+        {
+            "tag": "cancer_prevention",
+            "patterns": ["How can I prevent cancer?", "Ways to avoid cancer", "Preventing cancer"],
+            "responses": ["Prevent cancer by maintaining a healthy lifestyle, avoiding tobacco, and getting regular screenings."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_symptoms",
+            "patterns": ["What are the symptoms of diabetes?", "Signs of diabetes", "How do I know if I have diabetes?"],
+            "responses": ["Diabetes symptoms include increased thirst, frequent urination, fatigue, and blurred vision."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_treatment",
+            "patterns": ["How is diabetes treated?", "Diabetes treatment options", "Cure for diabetes"],
+            "responses": ["Diabetes treatment includes lifestyle changes, insulin therapy, and medication."],
+            "context_set": ""
+        },
+        {
+            "tag": "diabetes_prevention",
+            "patterns": ["How can I prevent diabetes?", "Ways to avoid diabetes", "Preventing diabetes"],
+            "responses": ["Prevent diabetes by maintaining a healthy weight, staying active, and eating a balanced diet."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypertension_symptoms",
+            "patterns": ["What are the symptoms of hypertension?", "Signs of hypertension", "How do I know if I have hypertension?"],
+            "responses": ["Hypertension symptoms often include headaches, shortness of breath, and nosebleeds."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypertension_treatment",
+            "patterns": ["How is hypertension treated?", "Hypertension treatment options", "Cure for hypertension"],
+            "responses": ["Hypertension treatment may include lifestyle changes and medications."],
+            "context_set": ""
+        },
+        {
+            "tag": "hypertension_prevention",
+            "patterns": ["How can I prevent hypertension?", "Ways to avoid hypertension", "Preventing hypertension"],
+            "responses": ["Prevent hypertension by maintaining a healthy weight, exercising regularly, and reducing salt intake."],
+            "context_set": ""
+        },
+        {
+            "tag": "stroke_symptoms",
+            "patterns": ["What are the symptoms of a stroke?", "Signs of stroke", "How do I know if I have had a stroke?"],
+            "responses": ["Stroke symptoms include sudden numbness, confusion, difficulty speaking, and severe headache."],
+            "context_set": ""
+        },
+        {
+            "tag": "stroke_treatment",
+            "patterns": ["How is a stroke treated?", "Stroke treatment options", "Cure for stroke"],
+            "responses": ["Stroke treatment may include medications to dissolve clots, rehabilitation, and surgery in some cases."],
+            "context_set": ""
+        },
+        {
+            "tag": "stroke_prevention",
+            "patterns": ["How can I prevent a stroke?", "Ways to avoid stroke", "Preventing stroke"],
+            "responses": ["Prevent strokes by managing blood pressure, reducing cholesterol, and avoiding smoking."],
+            "context_set": ""
+        },
+        {
+            "tag": "alzheimers_symptoms",
+            "patterns": ["What are the symptoms of Alzheimer's?", "Signs of Alzheimer's", "How do I know if I have Alzheimer's?"],
+            "responses": ["Alzheimer's symptoms include memory loss, confusion, difficulty completing familiar tasks, and changes in mood and personality."],
+            "context_set": ""
+        },
+        {
+            "tag": "alzheimers_treatment",
+            "patterns": ["How is Alzheimer's treated?", "Alzheimer's treatment options", "Cure for Alzheimer's"],
+            "responses": ["Alzheimer's treatment includes medications to manage symptoms, cognitive therapies, and lifestyle modifications to support brain health."],
+            "context_set": ""
+        },
+        {
+            "tag": "alzheimers_prevention",
+            "patterns": ["How can I prevent Alzheimer's?", "Ways to avoid Alzheimer's", "Preventing Alzheimer's"],
+            "responses": ["Prevent Alzheimer's by maintaining a healthy lifestyle, staying mentally active, managing cardiovascular risk factors, and engaging in regular exercise."],
+            "context_set": ""
+        },
+        {
+            "tag": "schizophrenia_symptoms",
+            "patterns": ["What are the symptoms of schizophrenia?", "Signs of schizophrenia", "How do I know if I have schizophrenia?"],
+            "responses": ["Schizophrenia symptoms may include delusions, hallucinations, disorganized thinking, and social withdrawal."],
+            "context_set": ""
+        },
+        {
+            "tag": "schizophrenia_treatment",
+            "patterns": ["How is schizophrenia treated?", "Schizophrenia treatment options", "Cure for schizophrenia"],
+            "responses": ["Schizophrenia treatment includes antipsychotic medications and psychotherapy."],
+            "context_set": ""
+        },
+        {
+            "tag": "schizophrenia_prevention",
+            "patterns": ["How can I prevent schizophrenia?", "Ways to avoid schizophrenia", "Preventing schizophrenia"],
+            "responses": ["While there's no guaranteed prevention, early treatment of symptoms may help."],
+            "context_set": ""
+        },
+        {
+            "tag": "epilepsy_symptoms",
+            "patterns": ["What are the symptoms of epilepsy?", "Signs of epilepsy", "How do I know if I have epilepsy?"],
+            "responses": ["Epilepsy symptoms include seizures, loss of consciousness, and confusion."],
+            "context_set": ""
+        },
+        {
+            "tag": "epilepsy_treatment",
+            "patterns": ["How is epilepsy treated?", "Epilepsy treatment options", "Cure for epilepsy"],
+            "responses": ["Epilepsy treatment usually involves anticonvulsant medications and lifestyle changes."],
+            "context_set": ""
+        },
+        {
+            "tag": "epilepsy_prevention",
+            "patterns": ["How can I prevent epilepsy?", "Ways to avoid epilepsy", "Preventing epilepsy"],
+            "responses": ["Preventing epilepsy is not always possible, but managing triggers can help reduce seizures."],
+            "context_set": ""
+        },
+        {
+            "tag": "kidney_stones_symptoms",
+            "patterns": ["What are the symptoms of kidney stones?", "Signs of kidney stones", "How do I know if I have kidney stones?"],
+            "responses": ["Kidney stones symptoms include severe pain in the side, blood in urine, and frequent urination."],
+            "context_set": ""
+        },
+        {
+            "tag": "kidney_stones_treatment",
+            "patterns": ["How are kidney stones treated?", "Kidney stones treatment options", "Cure for kidney stones"],
+            "responses": ["Kidney stones treatment may include pain relievers, hydration, and sometimes surgery."],
+            "context_set": ""
+        },
+        {
+            "tag": "kidney_stones_prevention",
+            "patterns": ["How can I prevent kidney stones?", "Ways to avoid kidney stones", "Preventing kidney stones"],
+            "responses": ["Prevent kidney stones by staying hydrated, reducing sodium intake, and eating a balanced diet."],
+            "context_set": ""
+        },
+        {
+            "tag": "osteoporosis_symptoms",
+            "patterns": ["What are the symptoms of osteoporosis?", "Signs of osteoporosis", "How do I know if I have osteoporosis?"],
+            "responses": ["Osteoporosis symptoms may include back pain, loss of height, and increased fractures."],
+            "context_set": ""
+        },
+        {
+            "tag": "osteoporosis_treatment",
+            "patterns": ["How is osteoporosis treated?", "Osteoporosis treatment options", "Cure for osteoporosis"],
+            "responses": ["Osteoporosis treatment may include medications, dietary changes, and exercise."],
+            "context_set": ""
+        },
+        {
+            "tag": "osteoporosis_prevention",
+            "patterns": ["How can I prevent osteoporosis?", "Ways to avoid osteoporosis", "Preventing osteoporosis"],
+            "responses": ["Prevent osteoporosis by getting enough calcium, exercising, and avoiding smoking."],
+            "context_set": ""
+        },
+        {
+            "tag": "psoriasis_symptoms",
+            "patterns": ["What are the symptoms of psoriasis?", "Signs of psoriasis", "How do I know if I have psoriasis?"],
+            "responses": ["Psoriasis symptoms include red patches covered with thick, silvery scales, itching, and dry skin."],
+            "context_set": ""
+        },
+        {
+            "tag": "psoriasis_treatment",
+            "patterns": ["How is psoriasis treated?", "Psoriasis treatment options", "Cure for psoriasis"],
+            "responses": ["Psoriasis treatment may include topical treatments, phototherapy, and systemic medications."],
+            "context_set": ""
+        },
+        {
+            "tag": "psoriasis_prevention",
+            "patterns": ["How can I prevent psoriasis?", "Ways to avoid psoriasis", "Preventing psoriasis"],
+            "responses": ["Prevent psoriasis by managing stress, avoiding skin injuries, and maintaining a healthy lifestyle."],
+            "context_set": ""
+        },
+        {
+            "tag": "eczema_symptoms",
+            "patterns": ["What are the symptoms of eczema?", "Signs of eczema", "How do I know if I have eczema?"],
+            "responses": ["Eczema symptoms include dry, itchy skin, redness, and inflammation."],
+            "context_set": ""
+        },
+        {
+            "tag": "eczema_treatment",
+            "patterns": ["How is eczema treated?", "Eczema treatment options", "Cure for eczema"],
+            "responses": ["Eczema treatment may include moisturizers, topical steroids, and avoiding irritants."],
+            "context_set": ""
+        },
+        {
+            "tag": "eczema_prevention",
+            "patterns": ["How can I prevent eczema?", "Ways to avoid eczema", "Preventing eczema"],
+            "responses": ["Prevent eczema by keeping skin moisturized, avoiding triggers, and managing stress."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergy_symptoms",
+            "patterns": ["What are the symptoms of allergies?", "Signs of allergies", "How do I know if I have allergies?"],
+            "responses": ["Allergy symptoms may include sneezing, itching, nasal congestion, and skin rashes."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergy_treatment",
+            "patterns": ["How are allergies treated?", "Allergy treatment options", "Cure for allergies"],
+            "responses": ["Allergy treatment may include antihistamines, nasal sprays, and avoiding allergens."],
+            "context_set": ""
+        },
+        {
+            "tag": "allergy_prevention",
+            "patterns": ["How can I prevent allergies?", "Ways to avoid allergies", "Preventing allergies"],
+            "responses": ["Prevent allergies by avoiding known triggers and maintaining a clean environment."],
+            "context_set": ""
+        },
+        {
+            "tag": "migraine_symptoms",
+            "patterns": ["What are the symptoms of a migraine?", "Signs of migraine", "How do I know if I have a migraine?"],
+            "responses": ["Symptoms of migraine include intense throbbing headache, sensitivity to light and sound, nausea, and sometimes visual disturbances called auras."],
+            "context_set": ""
+        },
+        {
+            "tag": "migraine_treatment",
+            "patterns": ["How is migraine treated?", "Migraine treatment options", "Cure for migraine"],
+            "responses": ["Migraine treatment may include medications like pain relievers, anti-nausea drugs, and preventive treatments, as well as lifestyle changes like stress management."],
+            "context_set": ""
+        },
+        {
+            "tag": "migraine_prevention",
+            "patterns": ["How can I prevent migraines?", "Ways to avoid migraines", "Preventing migraines"],
+            "responses": ["Prevent migraines by managing stress, getting adequate sleep, eating regularly, and avoiding known triggers such as certain foods or environmental factors."],
+            "context_set": ""
+        },
+        {
+            "tag": "brain_tumor_symptoms",
+            "patterns": ["What are the symptoms of a brain tumor?", "Signs of brain tumor", "How do I know if I have a brain tumor?"],
+            "responses": ["Symptoms of brain tumors vary but can include persistent headaches, vision or hearing issues, balance problems, seizures, and cognitive or personality changes."],
+            "context_set": ""
+        },
+        {
+            "tag": "brain_tumor_treatment",
+            "patterns": ["How is a brain tumor treated?", "Brain tumor treatment options", "Cure for brain tumor"],
+            "responses": ["Treatment for brain tumors depends on the type and location of the tumor and may involve surgery, radiation therapy, chemotherapy, and targeted therapies."],
+            "context_set": ""
+        },
+        {
+            "tag": "brain_tumor_prevention",
+            "patterns": ["How can I prevent brain tumors?", "Ways to avoid brain tumors", "Preventing brain tumors"],
+            "responses": ["While brain tumors often cannot be prevented, reducing exposure to radiation and avoiding known environmental toxins may help lower risk."],
+            "context_set": ""
+        },
+        {
+            "tag": "q_fever_symptoms",
+            "patterns": ["What are the symptoms of Q Fever ?"],
+            "responses": ["The following is a list of symptoms commonly seen with acute Q fever. However, it is important to note that the combination of symptoms varies greatly from person to person. Symptoms include high fevers (up to 104-105°F), severe headache, general malaise, myalgia, chills and/or sweats, non-productive cough, nausea, vomiting, diarrhea, abdominal pain, chest pain"],
+            "context_set": ""
+        },
+        {
+            "tag": "q_fever_information",
+            "patterns": ["What is Q Fever ?"],
+            "responses": ["Q fever or query fever is a disease caused by infection with Coxiella burnetii, a bacterium that affects humans and other animals."],
+            "context_set": ""
+        },
+        {
+            "tag": "q_fever_prevention",
+            "patterns": ["How to prevent Q Fever ?"],
+            "responses": ["The following measures should be used in the prevention and control of Q fever:  Educate the public on sources of infection, Appropriately dispose of placenta, birth products, fetal membranes, and aborted fetuses at facilities housing sheep and goats, Restrict access to barns and laboratories used in housing potentially infected animals, Use appropriate procedures for bagging, autoclaving, and washing of laboratory clothing, Vaccinate (where possible) individuals engaged in research with pregnant sheep or live C. burnetii, Quarantine imported animals, Ensure that holding facilities for sheep should be located away from populated areas. Animals should be routinely tested for antibodies to C. burnetii, and measures should be implemented to prevent airflow to other occupied areas, Counsel persons at highest risk for developing chronic Q fever, especially persons with pre-existing cardiac valvular disease or individuals with vascular grafts."],
+            "context_set": ""
+        }
+
+]
+}

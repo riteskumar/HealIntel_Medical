@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>⚕️HealIntel</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Initial welcome message -->
+            <div class="chat-message bot-message">
+                Hello! I'm HealIntel, your healthcare assistant. How can I help you today?
+            </div>
+            <!-- Suggested messages -->
+            <div class="suggestions-container">
+                <button class="suggestion-btn" onclick="sendSuggestedMessage('How do you treat a mild Fever?')">
+                    How do you treat a mild Fever? 🏥
+                </button>
+                <button class="suggestion-btn" onclick="sendSuggestedMessage('Book an appointment')">
+                    Book an appointment 📅
+                </button>
+                <button class="suggestion-btn" onclick="sendSuggestedMessage('How do you treat Skin problems?')">
+                    How do you treat Skin problems?
+                </button>
+                <button class="suggestion-btn" onclick="sendSuggestedMessage('How to cure cough?')">
+                    How to cure cough? 👨‍⚕️
+                </button>
+            </div>
+        </div>
+        <div class="typing-indicator" id="typing-indicator">
+            <span>Bot is typing...</span>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message" placeholder="Type your message..." autocomplete="on">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#typing-indicator').hide();
+            loadChatHistory();
+
+            $("#send-btn").click(function() {
+                sendMessage();
+            });
+
+            $('#message').keypress(function(event) {
+                if (event.keyCode == 13) {
+                    sendMessage();
+                }
+            });
+
+            function sendMessage() {
+                const message = $("#message").val();
+                if (message) {
+                    appendMessage('user-message', message);
+                    $("#message").val('');
+                    scrollToBottom();
+                    $('.suggestions-container').hide(); // Hide suggestions after user message
+
+                    $('#typing-indicator').show();
+
+                    $.ajax({
+                        url: "/chat",
+                        method: "POST",
+                        data: { message: message },
+                        success: function(response) {
+                            $('#typing-indicator').hide();
+                            appendMessage('bot-message', response.response);
+                            // showSuggestions(); // Show new suggestions after bot response
+                            scrollToBottom();
+                        }
+                    });
+                }
+            }
+
+            function appendMessage(className, message) {
+                $("#chat-box").append('<div class="chat-message ' + className + '">' + message + '</div>');
+                saveChatHistory();
+            }
+
+            function scrollToBottom() {
+                var chatBox = document.getElementById("chat-box");
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+
+            function saveChatHistory() {
+                const chatContent = $("#chat-box").html();
+                localStorage.setItem("chatHistory", chatContent);
+            }
+
+            function loadChatHistory() {
+                const chatHistory = localStorage.getItem("chatHistory");
+                if (chatHistory) {
+                    $("#chat-box").html(chatHistory);
+                }
+                scrollToBottom();
+            }
+
+            // Function to show context-aware suggestions
+            function showSuggestions() {
+                const suggestions = [
+                    "Tell me more about this",
+                    "What are the next steps?",
+                    "Can I book an appointment?",
+                    "Is there someone I can talk to?"
+                ];
+
+                const suggestionsHtml = `
+                    <div class="suggestions-container">
+                        ${suggestions.map(suggestion => `
+                            <button class="suggestion-btn" onclick="sendSuggestedMessage('${suggestion}')">
+                                ${suggestion}
+                            </button>
+                        `).join('')}
+                    </div>
+                `;
+
+                $("#chat-box").append(suggestionsHtml);
+                scrollToBottom();
+            }
+        });
+
+        // Function to handle suggested message clicks
+        function sendSuggestedMessage(message) {
+            $("#message").val(message);
+            $("#send-btn").click();
+        }
+    </script>
+
+    </body>
+</html>
