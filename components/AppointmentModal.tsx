@@ -11,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { ReactNode } from "react";
 import { Appointment } from "@/types/appwrite.types";
 
 import { AppointmentForm } from "./forms/AppointmentForm";
@@ -42,9 +43,9 @@ export const AppointmentModal = ({
           {type}
         </Button>
       </DialogTrigger>
-      <DialogContent className="shad-dialog sm:max-w-md">
+      <DialogContent className="sm:max-w-md">
         <DialogHeader className="mb-4 space-y-3">
-          <DialogTitle className="capitalize">{type} Appointment</DialogTitle>
+          <DialogTitle>{`${type} Appointment`}</DialogTitle>
           <DialogDescription>
             Please fill in the following details to {type} appointment
           </DialogDescription>

@@ -3,10 +3,10 @@ import "./globals.css";
 
 import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import Navbar from "@/components/Navbar"; // Import the Navbar
+import Navbar from "../components/Navbar"; // Import the Navbar
 import { ClerkProvider } from '@clerk/nextjs';
 
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],

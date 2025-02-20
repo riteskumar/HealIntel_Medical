@@ -1,4 +1,4 @@
-import { databases } from '@/lib/appwrite.server';
+import { databases } from '../../../lib/appwrite.server';
 import { Query } from 'node-appwrite';
 import { NextResponse } from 'next/server';
 

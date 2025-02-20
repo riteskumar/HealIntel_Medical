@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { PasskeyModal } from "@/components/PasskeyModal";
+import { PasskeyModal } from "../components/PasskeyModal";
 import { useRouter } from "next/navigation";
 
 const WelcomePage = ({ searchParams }: SearchParamProps) => {

@@ -1,12 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { ArrowLeft,Lock, Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Lock, Eye, EyeOff } from "lucide-react";
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
 
 const AdminLogin = () => {
   const router = useRouter();

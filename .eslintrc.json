@@ -1,11 +1,21 @@
 {
-  "plugins": ["import"],
+  "plugins": ["import", "@typescript-eslint"],
   "extends": [
     "next/core-web-vitals",
     "standard",
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./"]
+        ],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+      }
+    }
+  },
   "rules": {
     "no-undef": "off",
     "import/order": [
@@ -25,6 +35,9 @@
           "caseInsensitive": true
         }
       }
-    ]
+    ],
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { Doctors } from "@/constants";
-import { getAppointment } from "@/lib/actions/appointment.actions";
-import { formatDateTime } from "@/lib/utils";
+import { Doctors } from "../../../../../constants";
+import { Button } from "../../../../../components/ui/button";
+// import { getAppointment } from "@/lib/actions/appointment.actions";
+// import { formatDateTime } from "@/lib/utils";
+import { formatDateTime } from "../../../../../lib/utils";
+import { getAppointment } from "../../../../../lib/actions/appointment.actions";
 // Full New appointment
 const RequestSuccess = async ({
   searchParams,

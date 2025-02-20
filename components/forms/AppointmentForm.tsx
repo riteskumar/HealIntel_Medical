@@ -99,6 +99,7 @@ export const AppointmentForm = ({
             cancellationReason: values.cancellationReason,
           },
           type: type,
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
         };
 
         const updatedAppointment = await updateAppointment(appointmentToUpdate);

@@ -1,6 +1,7 @@
-import { databases } from '@/lib/appwrite.server';
 import { Query } from 'node-appwrite';
+
 import { NextResponse } from 'next/server';
+import { databases } from '../../../lib/appwrite.server';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

@@ -1,13 +1,14 @@
 "use client";
+import { useAuth } from "@clerk/nextjs";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from 'next/navigation';
-import { useAuth ,SignIn} from "@clerk/nextjs";
 import { 
   ArrowLeft, Video, Calendar, Phone, FileText, Hospital, 
   Activity, Shield, Clock, MapPin, Zap, Heart, AlertCircle 
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from 'next/navigation';
+
 
 export default function AboutPage() {
   const { scrollYProgress } = useScroll();

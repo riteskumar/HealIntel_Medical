@@ -6,7 +6,7 @@ interface StatCardProps {
   type: 'appointments' | 'pending' | 'cancelled';
   count: number;
   label: string;
-  icon: React.ReactNode;
+  icon: string;
   trend?: string;
   className?: string;
 }
